@@ -98,6 +98,19 @@ a.btn-primary {
   padding: 2em 0;
 }
 
+.callout {
+  margin-top: 2em; 
+  .lobster {
+    font-family: 'Lobster', sans-serif;
+    font-size: 2.35em;
+  }
+  .phone {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3em;
+    display: block;
+  }
+}
+
 .navigation {
   background-color: $nm-green;
 
