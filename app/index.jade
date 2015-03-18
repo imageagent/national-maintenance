@@ -1,4 +1,66 @@
 extends layouts/default
 block content
 
-  h1 National Maintenance Supply &amp; Services
+  .header
+    .container
+      .row
+        .col-xs-12.text-center
+          h1 National Maintenance Supply &amp; Services
+
+  .navigation
+    .container
+      .row
+        .col-xs-12.centered-pills
+          ul.nav.nav-pills
+            li
+              a(href="#") About Us
+            li
+              a(href="#") Our Services
+            li
+              a(href="#") Contact Us
+
+  #section-about
+    .container
+      .row
+        .col-sm-6.col-sm-offset-6
+          h2 About National Maintenance Supply
+          p.
+            With over 20 years of Retail and Commercial Cleaning experience, we take pride in our customer services. We are a privately held company based in Upstate New York.
+          p.
+            We take great pride in making our clients’ locations look great each and every day. We know that a clean location helps the bottom line.
+          a.btn.btn-lg.btn-primary(href="#section-contact") Contact us today!
+
+  #section-services
+    .container
+      .row
+        .col-sm-7
+          h2 Our Services
+          p.
+            We work with our clients to meet their customers’ high expectations. We design a custom Janitorial Program for all of our partners. From 7-day-a-week service to once a month&mdash;every location is given the service it needs.
+          p.
+            We know that the cost is important to our clients. That is why we work with the latest technological advances in the cleaning business. We train our work force to focus on our standardized cleaning processes.
+        .col-sm-5
+          h4 We offer the following retail and commercial cleaning services:
+          ul
+            li VCT - Flooring, Waxing and Stripping
+            li Carpet Care
+            li Tile and Grout Cleaning
+            li Construction Clean-Up
+            li Porter Program
+            li High Dusting
+            li Pressure Washing
+            li Window Cleaning
+            li Grounds Cleaning
+            li Office Cleaning
+
+  #section-contact
+    .container
+      .row
+        .col-sm-6.col-sm-offset-6
+          h2 Contact Us
+          p.
+            We look forward to hearing from you! Our goal is to help our clients meet their customers’ high expectations for a clean environment.
+          ul.list-unstyled
+            li (315) 253-3017
+            li 
+              a(href="mailto:quote@nationalmaintenancecny.com") quote@nationalmaintenancecny.com

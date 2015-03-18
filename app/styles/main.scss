@@ -17,6 +17,11 @@ $icon-font-path: '../fonts/';
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700|Lobster);
 
 
+// Variables
+
+$nm-green: #246734;
+
+
 // Global
 
 body {
@@ -44,11 +49,23 @@ h5 {
 }
 
 
+// Buttons
+
+.btn {
+  background-color: $nm-green;
+  border: none;
+  font-family: 'Lobster', sans-serif;
+
+  &:hover {
+    background-color: darken($nm-green, 5%);
+  }
+}
+
+
 // Layout
 
 .page-footer {
   background-color: #3d3d3d;
-  margin-top: 6em;
   padding: 1.5em 0;
   text-align: center;
 
@@ -56,3 +73,13 @@ h5 {
     color: #e7e7e7;
   }
 }
+
+
+// Navigation
+
+.centered-pills { text-align:center; }
+.centered-pills ul.nav-pills { display:inline-block; }
+.centered-pills li { display:inline; }
+.centered-pills a { float:left; }
+* html .centered-pills ul.nav-pills { display:inline; } /* IE6 */
+*+html .centered-pills ul.nav-pills { display:inline; } /* IE7 */
