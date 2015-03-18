@@ -14,12 +14,24 @@ $icon-font-path: '../fonts/';
 
 // Imports
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700|Lobster);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700|Lobster|Oswald:700);
 
 
 // Variables
 
-$nm-green: #246734;
+// $nm-green: #246734;
+// $nm-med-green: #3c9444;
+// $nm-lite-green: #7ec244;
+// $nm-yellow: #d9e153;
+// $nm-white: #f7f7f7;
+// $nm-black: #242a22;
+
+$nm-green: #4d4d4d;
+$nm-med-green: #a7a7a7;
+$nm-lite-green: #d3d3d3;
+$nm-yellow: #e7e7e7;
+$nm-white: #f7f7f7;
+$nm-black: #2d2d2d;
 
 
 // Global
@@ -31,6 +43,10 @@ body {
 
 .container {
   max-width: 970px;
+}
+
+img {
+  max-width: 90%;
 }
 
 
@@ -45,32 +61,93 @@ h2,
 h3,
 h4,
 h5 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
   margin: 0;
+}
+
+a,
+a:visited {
+  color: $nm-med-green;
+
+  &:hover,
+  &:active {
+    color: $nm-green;
+  }
 }
 
 
 // Buttons
 
-.btn {
+a.btn-primary {
   background-color: $nm-green;
   border: none;
+  color: $nm-white;
   font-family: 'Lobster', sans-serif;
 
   &:hover {
     background-color: darken($nm-green, 5%);
+    color: $nm-white;
   }
 }
 
 
 // Layout
 
+.masthead {
+  padding: 2em 0;
+}
+
+.navigation {
+  background-color: $nm-green;
+
+  a {
+    color: $nm-white;
+  }
+}
+
+#section-about,
+#section-services,
+#section-contact {
+  padding: 2em 0;
+
+  h2 {
+    color: $nm-med-green;
+    font-size: 2.25em;
+    font-weight: 900;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+  }
+
+  h4 {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    margin-bottom: 1em;
+  }
+
+  li {
+    line-height: 1.5;
+  }
+}
+
+#section-services {
+  background-color: $nm-green;
+  color: $nm-white;
+
+  h2 {
+    color: $nm-lite-green;
+  }
+}
+
 .page-footer {
-  background-color: #3d3d3d;
+  background-color: $nm-black;
+  color: lighten($nm-black, 30%);
+  font-size: 75%;
   padding: 1.5em 0;
   text-align: center;
 
   a {
-    color: #e7e7e7;
+    color: lighten($nm-black, 30%);
   }
 }
 
@@ -83,3 +160,18 @@ h5 {
 .centered-pills a { float:left; }
 * html .centered-pills ul.nav-pills { display:inline; } /* IE6 */
 *+html .centered-pills ul.nav-pills { display:inline; } /* IE7 */
+
+
+// Media Queries
+
+@media only screen and (min-width: 768px) {
+  .masthead {
+    padding: 6em 0;
+  }
+
+  #section-about,
+  #section-services,
+  #section-contact {
+    padding: 8em 0;
+  }
+}
