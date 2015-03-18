@@ -1,0 +1,58 @@
+$icon-font-path: '../fonts/';
+
+// bower:scss
+@import "bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+
+// Imports
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700|Lobster);
+
+
+// Global
+
+body {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 970px;
+}
+
+
+// Typography
+
+p {
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+
+// Layout
+
+.page-footer {
+  background-color: #3d3d3d;
+  margin-top: 6em;
+  padding: 1.5em 0;
+  text-align: center;
+
+  a {
+    color: #e7e7e7;
+  }
+}
