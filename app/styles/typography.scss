@@ -1,0 +1,51 @@
+p {
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  margin: 0;
+}
+
+a,
+a:visited {
+  color: $nm-med-green;
+
+  &:hover,
+  &:active {
+    color: $nm-green;
+  }
+}
+
+
+
+/* ==================================================
+  Buttons
+  ================================================ */
+
+a.btn-primary {
+  background-color: $nm-green;
+  border: none;
+  color: $nm-white;
+  font-family: 'Lobster', sans-serif;
+
+  &:hover {
+    background-color: darken($nm-green, 5%);
+    color: $nm-white;
+  }
+}
+
+
+
+/* ==================================================
+  Media Queries
+  ================================================ */
+
+@media only screen and (min-width: 768px) {
+  
+}
