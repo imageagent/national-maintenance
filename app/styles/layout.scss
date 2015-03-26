@@ -46,9 +46,7 @@
   Sections
   ================================================ */
 
-#section-about,
-#section-services,
-#section-contact {
+.section {
   padding: 2em 0;
 
   h2 {
@@ -56,6 +54,12 @@
     font-size: 2.25em;
     font-weight: 900;
     margin-bottom: 1em;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    font-weight: 900;
+    margin-bottom: 0.5em;
     text-transform: uppercase;
   }
 
@@ -70,13 +74,21 @@
   }
 }
 
-#section-services {
-  background-color: $nm-green;
-  color: $nm-white;
+.comparison {
+  // margin-top: 1.5em;
 
-  h2 {
-    color: $nm-lite-green;
+  img {
+    opacity: 0.8;
+    transition: opacity 0.25s ease;
+
+    &:hover {
+      opacity: 1;
+    }
   }
+}
+
+.comparison:last-of-type {
+  margin-top: 1.5em;
 }
 
 
@@ -108,9 +120,7 @@
     padding: 6em 0;
   }
 
-  #section-about,
-  #section-services,
-  #section-contact {
-    padding: 8em 0;
+  .section {
+    padding: 4em 0;
   }
 }

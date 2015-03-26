@@ -2,7 +2,7 @@ extends layouts/default
 block content
 
   .masthead
-    .container
+    .container-fluid
       .row
         .col-xs-12.text-center
           img(src="images/national-maintenance-logo.svg", alt="National Maintenance Supply", width="700")
@@ -11,7 +11,7 @@ block content
             span.phone 315.253.3017
 
   .navigation
-    .container
+    .container-fluid
       .row
         .col-xs-12.centered-pills
           ul.nav.nav-pills
@@ -22,44 +22,103 @@ block content
             li
               a(href="#section-contact") Contact Us
 
-  #section-about
-    .container
+  #section-about.section
+    .container-fluid
       .row
         .col-sm-6.col-sm-offset-6
-          h2 About National Maintenance Supply
+          h2 About National Maintenance Supply &amp; Service
           p.
             With over 20 years of Retail and Commercial Cleaning experience, we take pride in our customer services. We are a privately held company based in Upstate New York.
           p.
             We take great pride in making our clients’ locations look great each and every day. We know that a clean location helps the bottom line.
           a.btn.btn-lg.btn-primary(href="#section-contact") Contact us today!
 
-  #section-services
-    .container
-      .row
-        .col-sm-7
-          h2 Our Services
-          p.
-            We work with our clients to meet their customers’ high expectations. We design a custom Janitorial Program for all of our partners. From 7-day-a-week service to once a month&mdash;every location is given the service it needs.
-          p.
-            We know that the cost is important to our clients. That is why we work with the latest technological advances in the cleaning business. We train our work force to focus on our standardized cleaning processes.
-          p.
-            We can handle multiple locations. We have Area Managers assigned to each and every location. We have one number to call for service, unlike our competitors. Billing is made simple with consolidated, itemized invoices by location.
-        .col-sm-5
-          h4 We offer the following retail and commercial cleaning services:
-          ul
-            li VCT - Flooring, Waxing and Stripping
-            li Carpet Care
-            li Tile and Grout Cleaning
-            li Construction Clean-Up
-            li Porter Program
-            li High Dusting
-            li Pressure Washing
-            li Window Cleaning
-            li Grounds Cleaning
-            li Office Cleaning
+  
 
-  #section-contact
-    .container
+  #section-services
+    .section-tile.section(style="background-color:#e7e7e7;")
+      .container-fluid
+        .row
+          .col-sm-6
+            h2 Tile &amp; Grout Cleaning
+            p We work with our clients to meet their customers’ high expectations. We design a custom Janitorial Program for all of our partners. From daily service to once a month&mdash;every location is given the service it needs.
+            p We know that the cost is important to our clients. That is why we work with the latest technological advances in the cleaning business. We train our work force to focus on our standardized cleaning processes.
+          .col-sm-6
+            .row.comparison
+              .col-xs-6
+                img(src="http://placehold.it/400x200/auto&text=Before", alt="Before Image")
+              .col-xs-6
+                img(src="http://placehold.it/400x200/auto&text=After", alt="After Image")
+            .row.comparison
+              .col-xs-6
+                img(src="http://placehold.it/400x200/auto&text=Before", alt="Before Image")
+              .col-xs-6
+                img(src="http://placehold.it/400x200/auto&text=After", alt="After Image")
+    .section-a.section(style="background-color:#c5c5c5;")
+      .container-fluid
+        .row
+          .col-sm-6
+            h3 Carpet Care
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur excepturi, dignissimos quod voluptas tenetur nihil quis beatae, velit, sapiente, dolor aliquid incidunt nostrum. Praesentium voluptas.
+            .row.comparison
+              .col-xs-6
+                img(src="http://placehold.it/400x200/auto&text=Before", alt="Before Image")
+              .col-xs-6
+                img(src="http://placehold.it/400x200/auto&text=After", alt="After Image")
+          .col-sm-6
+            h3 Construction Clean-Up
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id officiis optio dolor, sint autem, ex at doloremque eaque unde soluta sed vero modi tempora molestias pariatur, nesciunt distinctio fuga dolore.
+            .row.comparison
+              .col-xs-6
+                img(src="http://placehold.it/400x200/auto&text=Before", alt="Before Image")
+              .col-xs-6
+                img(src="http://placehold.it/400x200/auto&text=After", alt="After Image")
+    .section-b.section(style="background-color:#e7e7e7;")
+      .container-fluid
+        .row
+          .col-sm-6
+            h3 Flooring, Waxing and Stripping
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur placeat ab nihil, vitae ipsa hic. Nam corporis, error facilis sequi officiis perspiciatis voluptatum pariatur enim vero dolorum, temporibus, magni maxime.
+            .row.comparison
+              .col-xs-6
+                img(src="http://placehold.it/400x200/auto&text=Before", alt="Before Image")
+              .col-xs-6
+                img(src="http://placehold.it/400x200/auto&text=After", alt="After Image")
+          .col-sm-6
+            h3 Pressure Washing
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam ipsum quam dolores, quibusdam unde sed, quis saepe nostrum veniam iste quas non numquam amet magni, totam ea, impedit vitae facere.
+            .row.comparison
+              .col-xs-6
+                img(src="http://placehold.it/400x200/auto&text=Before", alt="Before Image")
+              .col-xs-6
+                img(src="http://placehold.it/400x200/auto&text=After", alt="After Image")
+
+      //- .container-fluid
+      //-   .row
+      //-     .col-sm-7
+      //-       h2 Our Services
+      //-       p.
+      //-         We work with our clients to meet their customers’ high expectations. We design a custom Janitorial Program for all of our partners. From 7-day-a-week service to once a month&mdash;every location is given the service it needs.
+      //-       p.
+      //-         We know that the cost is important to our clients. That is why we work with the latest technological advances in the cleaning business. We train our work force to focus on our standardized cleaning processes.
+      //-       p.
+      //-         We can handle multiple locations. We have Area Managers assigned to each and every location. We have one number to call for service, unlike our competitors. Billing is made simple with consolidated, itemized invoices by location.
+      //-     .col-sm-5
+      //-       h4 We offer the following retail and commercial cleaning services:
+      //-       ul
+      //-         li VCT - Flooring, Waxing and Stripping
+      //-         li Carpet Care
+      //-         li Tile and Grout Cleaning
+      //-         li Construction Clean-Up
+      //-         li Porter Program
+      //-         li High Dusting
+      //-         li Pressure Washing
+      //-         li Window Cleaning
+      //-         li Grounds Cleaning
+      //-         li Office Cleaning
+
+  #section-contact.section
+    .container-fluid
       .row
         .col-sm-6.col-sm-offset-6
           h2 Contact Us
