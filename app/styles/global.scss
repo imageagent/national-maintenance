@@ -1,6 +1,7 @@
 body {
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-size: 16px;
+  padding-top: 3.2em;
 }
 
 .container-fluid {
@@ -24,5 +25,7 @@ img {
   ================================================ */
 
 @media only screen and (min-width: 768px) {
-  
+  body {
+    padding-top: 6em;
+  }
 }
