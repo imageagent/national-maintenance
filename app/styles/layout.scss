@@ -3,27 +3,35 @@
   ================================================ */
 
 .masthead {
-  background: url(../images/masthead-van.jpg) center center;
+  background: url(../images/masthead-van-green.jpg) center center;
   background-size: cover;
   border-bottom: 1px solid #e7e7e7;
+  color: #e7e7e7;
   padding: 2em 0;
   position: relative;
+
+  h1,
+  .lead {
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.75);
+  }
 }
 
-.masthead:after {
-  background: url(../images/boxy-brown.png) center center;
-  content: "";
-  position: absolute; top: 0; left: 0;
-  width: 100%; height: 100%;
-  z-index: 2;
-}
+// .masthead:after {
+//   background: url(../images/boxy-brown.png) center center;
+//   content: "";
+//   position: absolute; top: 0; left: 0;
+//   width: 100%; height: 100%;
+//   z-index: 2;
+// }
 
 .callout {
   margin-top: 2em;
+
   .lobster {
     font-family: 'Lobster', sans-serif;
     font-size: 2.35em;
   }
+
   .phone {
     color: $nm-green;
     font-family: 'Oswald', sans-serif;
@@ -50,11 +58,42 @@
   transition: all 0.7s ease;
 }
 
+.navbar-inverse {
+  background-color: $nm-black;
+  // border-color: $nm-green;
+}
+
 .navbar-brand {
   padding: 10px 15px;
 }
 
+.navbar-nav {
+  text-align: center;
+}
+
+// .navbar-inverse .navbar-nav > li > a {
+//   color: $nm-green;
+// }
+
+// .navbar-inverse .navbar-collapse,
+// .navbar-inverse .navbar-form {
+//   border-color: darken($nm-yellow, 10%);
+// }
+
+// .navbar-inverse .navbar-toggle,
+// .navbar-inverse .navbar-toggle:focus {
+//   background-color: $nm-green;
+//   border-color: darken($nm-green, 5%);
+
+//   &:hover {
+//     background-color: darken($nm-green, 5%);
+//   }
+// }
+
 @media only screen and (min-width: 768px) {
+  .navbar-nav {
+    text-align: right;
+  }
   .navbar.navbar-fat {
     min-height: 6em;
 
